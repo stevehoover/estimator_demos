@@ -79,6 +79,7 @@ class RPS extends Vue {
     }
 
     this.prediction = new Prediction(4, true, this.estimator_ws, predictionCB, wsReady);
+        // TODO: "true" value seems suspect. API does not support probablistic yet.
 
     //wsReady();
   }
